@@ -1,7 +1,4 @@
 package com.cognizant.attendance.model;
-
-
-
 import java.sql.Time;
 import java.util.Date;
 

@@ -16,7 +16,7 @@
         <img src="images\logo3.png" border="0" />
     </div>
     <div id="logo-name" style="display: inline-block; min-width: 3.8cm;">
-        <b>ATTENDANCE MARKING</b> <br> <b>FOR CLASSROOM</b>
+       <b>ATTENDANCE MARKING</b> <br> <b>FOR CLASSROOM</b>
     </div>
     <div class="container">
         <form action="UpdateTrainer" method="post">
