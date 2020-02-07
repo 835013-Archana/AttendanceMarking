@@ -27,8 +27,9 @@ public class UpdateTrainerDetails extends HttpServlet {
 		String skillId = request.getParameter("skillId");
 		TrainerDetails trainerDetail=new TrainerDetails(trainerId, trainerName, contactNumber, email, skillId);
 		AdminDao adminDao = new AdminDaoSqlimpl();
+		System.out.println(trainerId+trainerName+contactNumber+email+skillId);
 		adminDao.updateTrainerList(trainerDetail);
-		System.out.println(trainerDetail);
+		System.out.println(trainerId+trainerName+contactNumber+email+skillId);
 		request.getRequestDispatcher("trainer.jsp").forward(request, response);
 		
 	}

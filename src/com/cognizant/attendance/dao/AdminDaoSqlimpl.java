@@ -134,13 +134,15 @@ public class AdminDaoSqlimpl implements AdminDao {
 		@SuppressWarnings("unused")
 		int result = 0;
 		try {
-			String sql = "UPDATE trainer_details set trainer_name=?, contact_number=?, email=?, skill_id=? where trainer_id=?";
+			String sql = "UPDATE trainer_details set  trainer_name=?, contact_number=?, email=?, skill_id=? where trainer_id=?";
 			System.out.println("sql" + sql);
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setString(2, trainerDetails.getTrainerName());
-			statement.setLong(3, trainerDetails.getContactNumber());
-			statement.setString(4, trainerDetails.getEmail());
-			statement.setString(5, trainerDetails.getSkillId());
+			
+			statement.setString(1, trainerDetails.getTrainerName());
+			statement.setLong(2, trainerDetails.getContactNumber());
+			statement.setString(3, trainerDetails.getEmail());
+			statement.setString(4, trainerDetails.getSkillId());
+			statement.setString(5, trainerDetails.getTrainerId());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 

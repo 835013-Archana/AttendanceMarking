@@ -164,9 +164,7 @@ CREATE TABLE `trainer_details` (
   `contact_number` bigint(20) NOT NULL,
   `email` varchar(70) NOT NULL,
   `skill_id` varchar(100) NOT NULL,
-  PRIMARY KEY (`trainer_id`),
-  KEY `skill_id` (`skill_id`),
-  CONSTRAINT `trainer_details_ibfk_1` FOREIGN KEY (`skill_id`) REFERENCES `skill_set` (`skill_id`)
+  PRIMARY KEY (`trainer_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -214,4 +212,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-02-04 12:45:30
+-- Dump completed on 2020-02-07  9:17:04
