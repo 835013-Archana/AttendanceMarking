@@ -6,12 +6,13 @@ public class UserDetails {
 	private String firstName;
 	private String lastName;
 	private String employeeId;
-	private long email;
+	private String email;
 	private String password;
 	public UserDetails() {
 		// TODO Auto-generated constructor stub
 	}
-	public UserDetails(String firstName, String lastName, String employeeId, long email, String password) {
+	public UserDetails(String firstName, String lastName, String employeeId,
+			String email, String password) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -37,10 +38,10 @@ public class UserDetails {
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
 	}
-	public long getEmail() {
+	public String getEmail() {
 		return email;
 	}
-	public void setEmail(long email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 	public String getPassword() {
@@ -49,5 +50,6 @@ public class UserDetails {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	
 }

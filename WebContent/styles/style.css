@@ -13,15 +13,46 @@ header {
     font-family: fantasy;
     top: 0%;
 }
+
+footer {
+    color: white;
+    bottom: 0%;
+    min-width: 100%;
+    height: 2%;
+    left: 0%;
+    background-color: /* #484a49 */#1a1919;
+    padding: 20px;
+    font-size: 15px;
+    text-indent: 0%;
+    text-decoration: none;
+    position: fixed;
+}
+
+.footer2 {
+    color: #ffffff;
+    bottom: 5%;
+    min-width: 100%;
+    height: 2%;
+    left: 0%;
+    background-color: /* #2b2b2a */ #484a49;
+    padding: 20px;
+    font-size: 15px;
+    text-indent: 0%;
+    position: fixed;
+    font-size: 20px;
+    background: rbga(0,0,0,0.1);
+}
+
 /* Logo name in index.jsp */
 #logo-name {
     top: 9%;
     position: fixed;
     left: 7.5%;
     font-size: 30px;
-    font-family: Lucida Console;
+    font-family: Century Gothic;
     display: inline-block;
-    min-width:3.8cm;
+    min-width: 3.8cm;
+    text-shadow: 2px 2px 8px white;
 }
 
 /* Body tag in index.jsp */
@@ -32,14 +63,18 @@ body {
     width: 50%;
     height: 50%;
 }
-#save {
-    font-size: 120%;
-    top: 23%;
-    position: fixed;
-    left: 25%;
-    color: #ff000;
-    font-weight: bold;
-    margin-right: 80%;
+
+.container-admin1 {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 55%;
+    height: 100%;
+    padding: 20px;
+    top: 40%;
+    left: 10%;
+    font-family: Calibri;
+    transform: translate(60%, 24%);
+    border-radius: 15px;
 }
 /* Navigation */
 nav a {
@@ -53,7 +88,6 @@ nav a {
     text-indent: 1%;
     font-size: 20px;
     position: fixed;
-    position: fixed;
 }
 /* Navigation and anchor link in all webpages*/
 nav a:hover {
@@ -61,8 +95,8 @@ nav a:hover {
 }
 /*Image tag in all webpages*/
 img {
-    width: 135px;
-    height: 135px;
+    width: 130px;
+    height: 130px;
     align: left;
 }
 
@@ -82,6 +116,10 @@ h2 {
     align: center;
 }
 
+hr.horizontal-footer {
+    border-top: 1px dashed white;
+    left: 0%;
+}
 /* Anchor link Id for cart*/
 #cart {
     margin-left: 100%;
@@ -127,15 +165,22 @@ h2 {
 }
 /*Div class in all forms*/
 .container {
-    background: rgba(0.5, 0.5, 0.5, 0.5);
+    /*  background: rgba(0.5, 0.5, 0.5, 0.5);
     color: #f1f1f1;
     width: 30%;
-    height: 200%;
+    height: 270%;
     padding: 20px;
+    top: 60%;
+    left: 90%;
+    transform: translate(150%, 40%); */
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 30%;
+    height: 250%;
+    padding: 32px;
     top: 70%;
     left: 90%;
-    transform: translate(150%, 40%);
-    
+    transform: translate(135%, 40%);
 }
 /* Icons for all fields in Admin and User webpages */
 .input-icons i {
@@ -218,14 +263,15 @@ input[type=radio].with-font:focus+label:before {
 }
 /*Container class in admin webpages*/
 .container-admin {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: #f1f1f1;
-    width: 30%;
+    width: 35%;
     height: 200%;
     padding: 20px;
     top: 70%;
-    left: 90%;
-    transform: translate(150%, 120%);
+    left: 50%;
+    transform: translate(131%, 120%);
+    border-radius:26px;
 }
 /* Dropdown properties of trainer link */
 .dropdown {
@@ -365,6 +411,52 @@ input[type=radio].with-font:focus+label:before {
 .dropdown2:hover .dropdown2-content {
     display: block;
 }
+/* Dropdown properties of session link */
+.dropdown3 {
+    float: right;
+    left: 90%;
+    position: fixed;
+}
+
+.dropdown3 .dropbtn3 {
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 40px;
+    background-color: black;
+    font-family: calibri;
+}
+
+.navbar a:hover, .dropdown3:hover .dropbtn3 {
+    background-color: red;
+}
+
+.dropdown3-content {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown3-content a {
+    float: none;
+    color: black;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: calibri;
+}
+
+.dropdown3-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown3:hover .dropdown3-content {
+    display: block;
+}
 /* Add trainer link add-trainer webpages */
 #add-trainer {
     color: #ffffff;
@@ -443,6 +535,27 @@ input[type=radio].with-font:focus+label:before {
     width: 90px;
     height: 30px;
     position: fixed;
+    left: 40%;
+}
+
+#footer-button1 {
+    background-color: #4f4e4d;
+    color: #ffffff;
+    position: fixed;
+    left: 85%;
+    text-decoration: none;
+    border-style: inset;
+    font-size: 17px;
+}
+
+#footer-button2 {
+    background-color: #4f4e4d;
+    color: #ffffff;
+    position: fixed;
+    left:90%;
+    text-decoration: none;
+    border-style: inset;
+    font-size: 17px;
 }
 /*Container class in upadte-trainer webpage*/
 .update-container {
@@ -473,9 +586,122 @@ input[type=radio].with-font:focus+label:before {
     position: fixed;
 }
 /*Quotes in index pages */
-#quotes{
-    top:28%;
-    left:3%;
-    font-size:40px;
-    position:fixed;
+#quotes {
+    top: 28%;
+    left: 1%;
+    font-family: Rockwell;
+    font-size: 53px;
+    position: fixed;
+    text-shadow: 10px 10px 18px white;
+}
+/* Quotes in trainer page */
+#trainer-quotes {
+    top: 26%;
+    left: 15%;
+    font-family: Rockwell;
+    font-size: 53px;
+    position: fixed;
+    text-shadow: 10px 10px 18px white;
+}
+/*Enroll link in user page*/
+#enroll {
+    color: #ffffff;
+    left: 70%;
+    top: 1.5%;
+    font-size: 25px;
+    font-family: calibri;
+    text-decoration: none;
+    position: fixed;
+}
+/*Attend link in user page*/
+#attend {
+    color: #ffffff;
+    left: 80%;
+    top: 1.5%;
+    font-size: 25px;
+    font-family: calibri;
+    text-decoration: none;
+    position: fixed;
+    text-decoration: none;
+}
+
+/* Quotes in user page */
+#user-quotes {
+    top: 26%;
+    left: 10%;
+    font-family: Rockwell;
+    font-size: 53px;
+    position: fixed;
+    text-shadow: 10px 10px 18px white;
+}
+/*status for in registration and login pages */
+#login-status {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    font-style: bold;
+    top: 20%;
+    left: 37%;
+    position: fixed;
+    color: #d10a22;
+}
+/*Logout option in all webpages*/
+#logout {
+    top: 2%;
+    margin-left: 90%;
+    position: fixed;
+}
+
+#trainer-logout {
+    top: 1.5%;
+    left: 10%;
+    color: #ffffff;
+    font-family: calibri;
+    text-indent: 1%;
+    font-size: 20px;
+    text-decoration: none;
+    position: fixed;
+}
+
+.contact-admin {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 30%;
+    height: 200%;
+    padding: 20px;
+    top: 60%;
+    left: 90%;
+    transform: translate(140%, 110%);
+}
+
+#heading {
+    text-align: center;
+    font-family: Lucida Bright;
+    text-decoration: underline;
+}
+
+#phone {
+    font-family: Lucida Bright;
+}
+#pending-table{
+    top: 25%;
+    left: 25%;
+    font-weight:bold;
+    position: fixed;
+    width: 40%; 
+}
+#remove-session {
+    font-size: 120%;
+    top: 18%;
+    position: fixed;
+    left: 40%;
+    color: #0eb51c;
+    font-weight: bold;
+}
+#session-empty {
+    top: 30%;
+    font-size: 170%;
+    color: #ff0000;
+    left: 20%;
+    font-weight: bold;
+    position: fixed;
 }

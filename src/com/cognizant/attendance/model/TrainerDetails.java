@@ -5,20 +5,18 @@ public class TrainerDetails {
 	private String trainerName;
 	private long contactNumber;
 	private String email;
-	private String skillId;
+	private String skillSet;
 	public TrainerDetails() {
-		
+		// TODO Auto-generated constructor stub
 	}
-	
-	
 	public TrainerDetails(String trainerId, String trainerName,
-			long contactNumber, String email, String skillId) {
+			long contactNumber, String email, String skillSet) {
 		super();
 		this.trainerId = trainerId;
 		this.trainerName = trainerName;
 		this.contactNumber = contactNumber;
 		this.email = email;
-		this.skillId = skillId;
+		this.skillSet = skillSet;
 	}
 	public String getTrainerId() {
 		return trainerId;
@@ -44,13 +42,11 @@ public class TrainerDetails {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getSkillId() {
-		return skillId;
+	public String getSkillSet() {
+		return skillSet;
 	}
-	public void setSkillId(String skillId) {
-		this.skillId = skillId;
+	public void setSkillSet(String skillSet) {
+		this.skillSet = skillSet;
 	}
-	
 
 }
-	

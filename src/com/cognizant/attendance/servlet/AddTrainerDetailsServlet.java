@@ -16,8 +16,9 @@ import com.cognizant.attendance.dao.AdminDaoSqlimpl;
 import com.cognizant.attendance.model.TrainerDetails;
 @WebServlet("/AddTrainerDetails")
 public class AddTrainerDetailsServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;         	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private static final long serialVersionUID = 1L;
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
 		AdminDao adminDao = new AdminDaoSqlimpl();
 		System.out.println("inside addtrainer inside else if else");
 		String trainerId = request.getParameter("trainerId");
@@ -25,11 +26,13 @@ public class AddTrainerDetailsServlet extends HttpServlet {
 		long contactNumber = Long
 				.parseLong(request.getParameter("contactNumber"));
 		String email = request.getParameter("email");
-		String skillId = request.getParameter("skillId");
+		String skillSet = request.getParameter("skillSet");
 		List<TrainerDetails> list = new ArrayList<TrainerDetails>();
-		TrainerDetails trainerdetails=new TrainerDetails(trainerId, trainerName, contactNumber, email, skillId);
+		TrainerDetails trainerdetails = new TrainerDetails(trainerId,
+				trainerName, contactNumber, email, skillSet);
 		list.add(trainerdetails);
-		System.out.println(trainerId+trainerName+contactNumber+email+skillId);
+		System.out.println(
+				trainerId + trainerName + contactNumber + email + skillSet);
 		adminDao.addTrainerList(trainerdetails);
 		RequestDispatcher dispatcher = request
 				.getRequestDispatcher("trainer.jsp");

@@ -29,7 +29,7 @@ CREATE TABLE `admin_details` (
   `gender` varchar(6) NOT NULL,
   `contact_number` bigint(20) NOT NULL,
   `admin_id` varchar(10) NOT NULL,
-  `password` varchar(15) NOT NULL,
+  `password` varchar(15) NOT NULL,status varchar(30),
   PRIMARY KEY (`admin_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

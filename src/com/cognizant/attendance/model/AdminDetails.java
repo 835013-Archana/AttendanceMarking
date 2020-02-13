@@ -10,13 +10,13 @@ public class AdminDetails {
 	private long contactNumber;
 	private String adminId;
 	private String password;
-
+	private String status;
 	public AdminDetails() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public AdminDetails(String firstName, String lastName, Integer age, String gender, long contactNumber,
-			String adminId, String password) {
+	public AdminDetails(String firstName, String lastName, Integer age,
+			String gender, long contactNumber, String adminId, String password,
+			String status) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -25,62 +25,55 @@ public class AdminDetails {
 		this.contactNumber = contactNumber;
 		this.adminId = adminId;
 		this.password = password;
+		this.status = status;
 	}
-
 	public String getFirstName() {
 		return firstName;
 	}
-
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
 	public String getLastName() {
 		return lastName;
 	}
-
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
 	public Integer getAge() {
 		return age;
 	}
-
 	public void setAge(Integer age) {
 		this.age = age;
 	}
-
 	public String getGender() {
 		return gender;
 	}
-
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-
 	public long getContactNumber() {
 		return contactNumber;
 	}
-
 	public void setContactNumber(long contactNumber) {
 		this.contactNumber = contactNumber;
 	}
-
 	public String getAdminId() {
 		return adminId;
 	}
-
 	public void setAdminId(String adminId) {
 		this.adminId = adminId;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

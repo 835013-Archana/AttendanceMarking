@@ -1,25 +1,25 @@
 package com.cognizant.attendance.model;
-import java.sql.Time;
+
 import java.util.Date;
 
 public class SessionDetails {
 	private String sessionId;
 	private String sessionDescription;
-	private String SkillId;
+	private String skillId;
 	private Date date;
-	private Time time;
+	private String time;
 	private Integer availableSlots;
 
 	public SessionDetails() {
 		super();
 	}
 
-	public SessionDetails(String sessionId, String sessionDescription, String skillId, Date date, Time time,
-			Integer availableSlots) {
+	public SessionDetails(String sessionId, String sessionDescription,
+			String skillId, Date date, String time, Integer availableSlots) {
 		super();
 		this.sessionId = sessionId;
 		this.sessionDescription = sessionDescription;
-		SkillId = skillId;
+		this.skillId = skillId;
 		this.date = date;
 		this.time = time;
 		this.availableSlots = availableSlots;
@@ -42,11 +42,11 @@ public class SessionDetails {
 	}
 
 	public String getSkillId() {
-		return SkillId;
+		return skillId;
 	}
 
 	public void setSkillId(String skillId) {
-		SkillId = skillId;
+		this.skillId = skillId;
 	}
 
 	public Date getDate() {
@@ -57,11 +57,11 @@ public class SessionDetails {
 		this.date = date;
 	}
 
-	public Time getTime() {
+	public String getTime() {
 		return time;
 	}
 
-	public void setTime(Time time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 
